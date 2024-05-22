@@ -69,10 +69,10 @@ The model trains on static (X_Static) and timeseries (X_sequence) data to foreca
 We compared our architecture to hybrid and ensemble architectures (See diagrams below), and found that the attention architecture achieves similar performance. 
 
 
-![A diagram of the hybrid architecture](images/hybrid_diagram.png)
+![A diagram of the hybrid architecture](images/hybrid_diagram.PNG)
 Figure 1: A diagram of the hybrid architecture
 
-![A diagram of the ensemble/meta architecture](images/meta_arch.png)
+![A diagram of the ensemble/meta architecture](images/meta_arch.PNG)
 Figure 2: A diagram of the ensemble/meta architecture
 
 
@@ -88,7 +88,7 @@ Figure 3: A boxplot of the MSE of the different architectures
 Below we have visualised the attention weights. We see elements 8 and 9 have the highest weight. This means the model deems them as most important when predicting the following sequence. This does reflect a structural dependency in the fibonacci sequence, where the current element is determined by the sum of the previous 2 elements.
 This could suggest that attention mechansisms can be used to reveal or validate structural dependencies within data. 
 
-![The attention weights for the Fib architecture](images/fib_att_weights.png)
+![The attention weights for the Fib architecture](images/fib_att_weights.PNG)
 Figure 3: The attention weights for the Fib architecture
 
 
@@ -97,7 +97,7 @@ Figure 3: The attention weights for the Fib architecture
 
 Because the attention mechanism uses a dot product instead of concatenating the static and timeseries data, the dimensionality of the timeseries data fed into the  stays the same, meaning the model has less weights to learn, making it less prone to overfitting. 
 
-For a visual of what I mean, see image [every_step_concatenation.png](images/every_step_concatenation.png).
+For a visual of what I mean, see image [every_step_concatenation.png](images/every_step_concatenation.PNG).
 
 An added bonus is that attention weights can be visualized, which may or may not reveal structural dependencies within the data. 
 
