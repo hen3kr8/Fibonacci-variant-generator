@@ -2,7 +2,7 @@
 
 This model forecasts the next 10 elements of a variant of the fibonacci sequence by combining static and timeseries data using an attention mechanism. 
 
-![A diagram of the model architecture](images/att_architecture_diagram.png)
+![A diagram of the model architecture](images/att_architecture_diagram.PNG)
 
 
 
